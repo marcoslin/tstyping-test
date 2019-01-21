@@ -1,0 +1,21 @@
+{
+  "name": "testyping",
+  "version": "1.0.0",
+  "description": "test typing configuration for Typescript",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc --project ./tsconfig-ok.json",
+    "compile-fail": "tsc",
+    "run-proj": "ts-node --project ./tsconfig-ok.json src/index.ts",
+    "run-proj-fail": "ts-node --project ./tsconfig.json src/index.ts"
+  },
+  "dependencies": {
+    "es6-template-strings": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.4"
+  }
+}
