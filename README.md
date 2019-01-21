@@ -29,3 +29,14 @@ Found 1 error.
 error Command failed with exit code 2.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+
+## Solution
+
+The problem is actually related to use of `"types": [ "node" ]`.  I used this setting
+thinking that it is needed for typescript to recognise `node` objects mostly due to
+answers like below:
+
+* https://stackoverflow.com/questions/37260901/how-to-find-module-fs-in-ms-code-with-typescript#41413226
+
+The `tsconfig.json` is not changed in this repo intentially so reader can see the
+original problem and apply the soution from SO.
